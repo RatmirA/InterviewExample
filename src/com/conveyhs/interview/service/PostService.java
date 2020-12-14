@@ -2,12 +2,12 @@ package com.conveyhs.interview.service;
 
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.Date;
+import java.util.Date; /** We don't use this, need to remove */
 import java.util.LinkedList;
 import java.util.List;
 
 import com.conveyhs.interview.model.Post;
-import com.conveyhs.interview.model.User;
+import com.conveyhs.interview.model.User; /** We don't use this, need to remove */
 
 public class PostService extends BaseService {
 
@@ -26,7 +26,7 @@ public class PostService extends BaseService {
 	
 	private void createTable()
 	{
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.executeUpdate("drop table if exists post");
@@ -39,14 +39,14 @@ public class PostService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 4 times duplicates this part of code */
 			e.printStackTrace();
 		}
 	}
 	
 	public void put(Post p)
 	{
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.executeUpdate("insert into post VALUES (" + 
@@ -56,18 +56,18 @@ public class PostService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 4 times duplicates this part of code */
 			e.printStackTrace();
 		}
 	}
 
 	public Post get(String id)
 	{
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.setQueryTimeout(30);  // set timeout to 30 sec.
-			ResultSet rs = statement.executeQuery("select * from post where id = " + id);//= "?
+			ResultSet rs = statement.executeQuery("select * from post where id = " + id);/** "select * from post where id = "= "? */
 			if(rs.next())
 			{
 				return new Post(rs.getInt("id"), rs.getString("subject"), rs.getInt("user_id"), formatter.parse(rs.getString("posted")), formatter.parse(rs.getString("updated")));
@@ -76,7 +76,7 @@ public class PostService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 4 times duplicates this part of code */
 			e.printStackTrace();
 		}
 		return null;
@@ -90,7 +90,7 @@ public class PostService extends BaseService {
 	public List<Post> getByUserId(String userId)
 	{
 		List<Post> result = new LinkedList<>();
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.setQueryTimeout(30);  // set timeout to 30 sec.
@@ -102,9 +102,9 @@ public class PostService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 4 times duplicates this part of code */
 			e.printStackTrace();
 		}
 		return result;
-	} /** Always need to close connection with DB, in this case: con.close() */
+	}
 }

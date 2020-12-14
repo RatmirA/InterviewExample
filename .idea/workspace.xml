@@ -12,9 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25eb50fe-180a-43cd-9128-a7d9f5f8a549" name="Default Changelist" comment="First">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.db" beforeDir="false" afterPath="$PROJECT_DIR$/sample.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/service/BaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/service/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/service/UserService.java" afterDir="false" />
@@ -47,7 +44,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="JUnit.BaseService.randomString">
     <configuration name="BaseService.randomString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -133,7 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607732590415</updated>
       <workItem from="1607732597639" duration="50000" />
-      <workItem from="1607732656589" duration="19175000" />
+      <workItem from="1607732656589" duration="20635000" />
+      <workItem from="1607959524693" duration="3276000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <created>1607838313472</created>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607838313472</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First">
+      <created>1607956814017</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607956814017</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,12 +163,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />
     <option name="LAST_COMMIT_MESSAGE" value="First" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="239" key="#Custom_Plugin_Repositories" timestamp="1607959422095">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="499" y="239" key="#Custom_Plugin_Repositories/0.0.1280.680@0.0.1280.680" timestamp="1607959422095" />
     <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1607736741373">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -208,14 +218,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607837697659" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1607736333333">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1607959452359">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607736333333" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1607956785643">
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607959452359" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1607956907692">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607956785643" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607956907692" />
     <state x="375" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1607732758726">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

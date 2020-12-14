@@ -19,7 +19,7 @@ public class UserService extends BaseService {
 	
 	private void createTable()
 	{
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.executeUpdate("drop table if exists user");
@@ -31,14 +31,14 @@ public class UserService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 3 times duplicates this part of code */
 			e.printStackTrace();
 		}
 	}
 	
 	public void put(User u)
 	{
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.executeUpdate("insert into user VALUES (" + 
@@ -48,14 +48,14 @@ public class UserService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 3 times duplicates this part of code */
 			e.printStackTrace();
 		}
 	}
 
 	public User get(String id)
 	{
-		try
+		try /** Need to use try with resources or close this Statement in a finally clause */
 		{
 			Statement statement = conn.createStatement();
 			statement.setQueryTimeout(30);  // set timeout to 30 sec.
@@ -68,7 +68,7 @@ public class UserService extends BaseService {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Erorr:" + e.getMessage());
+			System.out.println("Erorr:" + e.getMessage()); /** 3 times duplicates this part of code */
 			e.printStackTrace();
 		}
 		return null;
