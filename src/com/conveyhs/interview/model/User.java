@@ -3,7 +3,8 @@ package com.conveyhs.interview.model;
 import java.util.Date;
 
 public class User {
-	private int id;
+	private int id; /** For id and userId good choice of using "long"
+	 and Data is legacy, if we using Java8+ the better to use LocalData*/
 	private String userName;
 	private String email;
 	private Date created;

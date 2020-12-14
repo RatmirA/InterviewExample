@@ -67,7 +67,7 @@ public class PostService extends BaseService {
 		{
 			Statement statement = conn.createStatement();
 			statement.setQueryTimeout(30);  // set timeout to 30 sec.
-			ResultSet rs = statement.executeQuery("select * from post where id = " + id);
+			ResultSet rs = statement.executeQuery("select * from post where id = " + id);//= "?
 			if(rs.next())
 			{
 				return new Post(rs.getInt("id"), rs.getString("subject"), rs.getInt("user_id"), formatter.parse(rs.getString("posted")), formatter.parse(rs.getString("updated")));
@@ -84,7 +84,7 @@ public class PostService extends BaseService {
 	
 	public int getPostCount(String userId)
 	{
-		return getByUserId(userId).size();
+		return getByUserId(userId).size();/** We can calculate from DB creating SQL count() function, without creating List */
 	}
 	
 	public List<Post> getByUserId(String userId)
@@ -106,5 +106,5 @@ public class PostService extends BaseService {
 			e.printStackTrace();
 		}
 		return result;
-	}
+	} /** Always need to close connection with DB, in this case: con.close() */
 }

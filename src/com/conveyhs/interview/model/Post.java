@@ -3,10 +3,11 @@ package com.conveyhs.interview.model;
 import java.util.Date;
 
 public class Post {
-	int id;
+	/** All fields must be private */
+	int id; /** For id and userId good choice of using "long" */
 	String subject;
 	int userId;
-	Date posted;
+	Date posted; /** Data is legacy, if we using Java8+ the better to use LocalData */
 	Date updated;
 	
 	public Post(int id, String subject, int userId, Date posted, Date updated) {

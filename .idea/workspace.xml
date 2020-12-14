@@ -13,6 +13,11 @@
     <list default="true" id="25eb50fe-180a-43cd-9128-a7d9f5f8a549" name="Default Changelist" comment="First">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample.db" beforeDir="false" afterPath="$PROJECT_DIR$/sample.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/conveyhs/interview/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conveyhs/interview/test/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +49,23 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="JUnit.BaseTest.testPostCount">
+  <component name="RunManager" selected="JUnit.BaseService.randomString">
+    <configuration name="BaseService.randomString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterviewExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.conveyhs.interview.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.conveyhs.interview.service" />
+      <option name="MAIN_CLASS_NAME" value="com.conveyhs.interview.service.BaseService" />
+      <option name="METHOD_NAME" value="randomString(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InterviewExample" />
       <extension name="coverage">
@@ -94,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BaseService.randomString" />
         <item itemvalue="JUnit.BaseTest.testPostCount" />
         <item itemvalue="JUnit.BaseTest" />
         <item itemvalue="JUnit.BaseTest.testGet" />
@@ -111,8 +133,16 @@
       <option name="presentableId" value="Default" />
       <updated>1607732590415</updated>
       <workItem from="1607732597639" duration="50000" />
-      <workItem from="1607732656589" duration="6732000" />
+      <workItem from="1607732656589" duration="19175000" />
     </task>
+    <task id="LOCAL-00001" summary="First">
+      <created>1607838313472</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607838313472</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,22 +176,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="389" y="46" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607835698303" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1607838084353">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1607954921795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607838084353" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1607838084353">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607954921795" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1607954921795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607838084353" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1607838084353">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607954921795" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1607954921795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607838084353" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1607838084353">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607954921795" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1607954921795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607838084353" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607954921795" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1607837697659">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -182,14 +212,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607736333333" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1607735348561">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1607956785643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607735348561" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607956785643" />
     <state x="375" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1607732758726">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="375" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1607732758726" />
+    <state x="303" y="1" key="search.everywhere.popup" timestamp="1607921485583">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607921485583" />
     <state x="471" y="132" key="svn.repositoryBrowser" timestamp="1607736744575">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
