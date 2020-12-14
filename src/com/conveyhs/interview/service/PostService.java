@@ -67,7 +67,7 @@ public class PostService extends BaseService {
 		{
 			Statement statement = conn.createStatement();
 			statement.setQueryTimeout(30);  // set timeout to 30 sec.
-			ResultSet rs = statement.executeQuery("select * from post where id = " + id);/** "select * from post where id = "= "? */
+			ResultSet rs = statement.executeQuery("select * from post where id = " + id);/** "select * from post where id = "? */
 			if(rs.next())
 			{
 				return new Post(rs.getInt("id"), rs.getString("subject"), rs.getInt("user_id"), formatter.parse(rs.getString("posted")), formatter.parse(rs.getString("updated")));
